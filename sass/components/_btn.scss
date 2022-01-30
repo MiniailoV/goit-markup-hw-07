@@ -38,13 +38,16 @@
   justify-content: center;
   margin-bottom: 50px;
 }
-.btn-item:not(:last-child) {
+
+.btn-item {
+    &:hover, {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+ }
+    &:not(:last-child) {
   margin-right: 8px;
+ }
 }
 
-.btn-item:hover {
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
 
 .btn-submit,
 .btn-footer {
