@@ -12,12 +12,12 @@
   border-radius: 4px;
   padding: 6px 22px;
   transition: background-color 250ms var(--animation-cubic);
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     background-color: var(--accent-color);
-  color: var(--white-color);
+    color: var(--white-color);
   }
 }
-
 
 .btn.btn-main {
   color: var(--white-color);
@@ -28,36 +28,38 @@
   min-width: 200px;
   min-height: 50px;
   transition: background-color 250ms var(--animation-cubic), box-shadow 250ms var(--animation-cubic);
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     background-color: var(--btn-hover-color);
   }
 }
 
 .section-pfo-list-btn {
+  @extend %list;
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
 .btn-item {
-    &:hover, {
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
- }
-    &:not(:last-child) {
-  margin-right: 8px;
- }
+  &:hover {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
 }
-
 
 .btn-submit,
 .btn-footer {
   color: var(--white-color);
   background-color: var(--accent-color);
   transition: background-color 250ms var(--animation-cubic);
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     background-color: var(--btn-hover-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
   }
 }
 

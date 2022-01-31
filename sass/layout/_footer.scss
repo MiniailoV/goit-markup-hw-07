@@ -14,7 +14,9 @@
 .address__link--map {
   color: var(--white-color);
 }
-
+.address__list {
+  @extend %list;
+}
 .address__item:not(:last-child) {
   margin-bottom: 9px;
 }

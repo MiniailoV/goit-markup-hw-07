@@ -8,6 +8,7 @@
 .card-set {
   display: flex;
   justify-content: center;
+  @extend %list;
 }
 
 .card-set__item:not(:last-child) {
@@ -27,8 +28,9 @@
   align-items: center;
   color: var(--icon-color);
   transition: background-color 250ms var(--animation-cubic), color 250ms var(--animation-cubic);
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     background-color: var(--accent-color);
-  color: var(--white-color);
+    color: var(--white-color);
   }
 }
